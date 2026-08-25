@@ -1,0 +1,10 @@
+unmanaged implementation in class zbp_i_melody_hstate unique;
+strict ( 2 );
+
+define behavior for ZI_MELODY_HSTATE
+lock master
+authorization master ( none )
+{
+  static action SetExpansionState
+    parameter ZA_MELODY_HSTATE_PARAM;
+}

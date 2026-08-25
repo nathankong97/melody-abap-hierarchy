@@ -1,0 +1,10 @@
+unmanaged implementation in class zbp_i_melody_hselect unique;
+strict ( 2 );
+
+define behavior for ZI_MELODY_HSELECT
+lock master
+authorization master ( none )
+{
+  static action SetSelectedNode
+    parameter ZA_MELODY_HSELECT_PARAM;
+}

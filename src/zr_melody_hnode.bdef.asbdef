@@ -1,0 +1,21 @@
+managed implementation in class zbp_r_melody_hnode unique;
+strict ( 2 );
+
+define behavior for ZR_MELODY_HNODE alias HierarchyNode
+persistent table zmelody_hnode
+lock master
+authorization master ( none )
+{
+  update;
+
+  field ( readonly ) NodeId;
+
+  mapping for zmelody_hnode
+  {
+    NodeId    = node_id;
+    ParentId  = parent_id;
+    NodeName  = node_name;
+    NodeType  = node_type;
+    SortOrder = sort_order;
+  }
+}

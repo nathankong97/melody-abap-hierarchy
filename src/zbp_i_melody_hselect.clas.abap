@@ -1,0 +1,5 @@
+CLASS zbp_i_melody_hselect DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_melody_hselect.
+ENDCLASS.
+
+CLASS zbp_i_melody_hselect IMPLEMENTATION.
+ENDCLASS.
