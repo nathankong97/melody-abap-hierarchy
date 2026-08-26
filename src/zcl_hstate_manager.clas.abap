@@ -31,12 +31,22 @@ CLASS ZCL_HSTATE_MANAGER IMPLEMENTATION.
 
     IF iv_expanded = abap_true.
 
-      INSERT zmelody_hstate FROM @(
-        VALUE #(
-          user_id = lv_user_id
-          node_id = iv_node_id
-        )
-      ).
+      SELECT SINGLE node_id
+        FROM zmelody_hstate
+        WHERE user_id = @lv_user_id
+          AND node_id = @iv_node_id
+        INTO @DATA(lv_existing_node).
+
+      IF sy-subrc <> 0.
+
+        INSERT zmelody_hstate FROM @(
+          VALUE #(
+            user_id = lv_user_id
+            node_id = iv_node_id
+          )
+        ).
+
+      ENDIF.
 
     ELSE.
 

@@ -1,21 +1,13 @@
-CLASS zcl_hierarchy_test DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_HIERARCHY_TEST definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    INTERFACES if_oo_adt_classrun .
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_HIERARCHY_TEST IMPLEMENTATION.
-
-
-  METHOD if_oo_adt_classrun~main.
-   out->write( 'ABAP Cloud connection works.' ).
-  ENDMETHOD.
 ENDCLASS.

@@ -1,7 +1,7 @@
 @EndUserText.label: 'Melody hierarchy service'
 define service ZUI_MELODY_HIER_SRV {
   expose ZC_MELODY_HNODE   as HierarchyNodes;
-  expose ZC_MELODY_HSTATE  as HierarchyStates;
+  expose ZI_MELODY_HSTATE  as HierarchyStates;
   expose ZR_MELODY_HNODE   as HierarchyNodeAdmin;
   expose ZI_MELODY_HSELECT as HierarchySelection;
 }
