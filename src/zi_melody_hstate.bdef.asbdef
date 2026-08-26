@@ -1,4 +1,4 @@
-unmanaged implementation in class zbp_i_melody_hstate unique;
+unmanaged implementation in class zbp_i_melody_hstate2 unique;
 strict ( 2 );
 
 define behavior for ZI_MELODY_HSTATE
