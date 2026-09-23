@@ -5,6 +5,6 @@ define behavior for ZI_MELODY_HSELECT
 lock master
 authorization master ( none )
 {
-  static action SetSelectedNode
+  static action SetSelectionState
     parameter ZA_MELODY_HSELECT_PARAM;
 }

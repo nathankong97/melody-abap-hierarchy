@@ -2,5 +2,6 @@
 
 define abstract entity ZA_MELODY_HSELECT_PARAM
 {
-  NodeId : abap.char(10);
+  NodeId   : abap.char(10);
+  Selected : abap_boolean;
 }
