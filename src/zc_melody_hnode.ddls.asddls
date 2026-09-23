@@ -15,7 +15,6 @@ define view entity ZC_MELODY_HNODE
   association [0..1] to ZC_MELODY_HNODE as _Parent
     on $projection.ParentId = _Parent.NodeId
 {
-      @Search.defaultSearchElement: true
   key NodeId,
       ParentId,
 

@@ -5,6 +5,6 @@ define root view entity ZI_MELODY_HSELECT
   as select from zmelody_hselect
 {
   key user_id          as UserId,
-      selected_node_id as SelectedNodeId
+  key selected_node_id as SelectedNodeId
 }
 where user_id = $session.user

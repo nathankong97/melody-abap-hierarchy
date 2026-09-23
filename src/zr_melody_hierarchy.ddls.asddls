@@ -8,8 +8,5 @@ define hierarchy ZR_MELODY_HIERARCHY
   )
 {
   key NodeId,
-      ParentId,
-      NodeName,
-      NodeType,
-      SortOrder
+      ParentId
 }
