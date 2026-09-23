@@ -77,16 +77,14 @@ CLASS lsc_zi_melody_hselect IMPLEMENTATION.
 
       IF change-selected = abap_true.
 
-        "The complete table key now contains user and node.
-        "MODIFY therefore inserts the selection or leaves it selected.
-        MODIFY zmelody_hselect FROM @(
-          VALUE #(
-            user_id          = lv_user_id
-            selected_node_id = change-node_id
-          )
-        ).
+      INSERT zmelody_hselect FROM @(
+        VALUE #(
+          user_id          = lv_user_id
+          selected_node_id = change-node_id
+        )
+      ).
 
-      ELSE.
+    ELSE.
 
         DELETE FROM zmelody_hselect
           WHERE user_id          = @lv_user_id
